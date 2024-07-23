@@ -146,6 +146,18 @@ body {
     display: flex;
 }
 
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.grid-cell {
+    border: 0px solid lightgray;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -157,51 +169,36 @@ body {
     background-color:lightgray;
 }
 
-#grid-container {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    width: 100%;
-    height: 100%;
-}
-
-.grid-cell {
-    border: 1px solid lightgray;
-}
-
 
 @media (max-width: 1000px) {
-    .body {
-        padding: 0;
-        margin: 0;
-    }
-    .container {
-        padding: 0;
-        margin: 0;
-    }
     .main-content {
-        padding: 0;
-        margin: 0;
+        justify-content: center;
     }
     .head1 {
         width: 100vw;
-        height: 10vh;
-        padding:0;
+        height: 5vh;
+        padding: 0;
         margin: 0;
     }
     .head2 {
+        width: 100vw;
+        height: 95vh;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100vw;
+        align-items: center; 
     }
-
     #palette {
-        height: 30vh;
-        width: 100vw;
+        height: 40%;
+        width: 100%;
     }
-
+    .colors-head {
+        margin: 16px;
+    }
     #pad {
-        height: 60vh;
-        width: 100vw;
+        height: 60%;
+        width: 100%;
+    }
+    .quote {
+        display: none;
     }
 }
