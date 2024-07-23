@@ -64,6 +64,7 @@ body {
     padding: none;
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 #red {
@@ -96,7 +97,7 @@ body {
 
 .eraser, .clear, .generate-grid {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: black;
     border-radius: 8px;
     width: fit-content;
@@ -109,6 +110,12 @@ body {
     padding: 8px;
     margin-top: 24px;
     margin-bottom: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eraser:hover, .clear:hover, .generate-grid:hover {
+    background-color:cornflowerblue;
 }
 
 .controls {
