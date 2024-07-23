@@ -88,27 +88,38 @@ body {
     background-color: gray;
 }
 
-.eraser, .clear {
+.colors-tools {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.eraser, .clear, .generate-grid {
     border-style: solid;
     border-width: 2px;
     border-color: black;
     border-radius: 8px;
-    width: 80px;
-    height: 25px;
+    width: fit-content;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
     background-color: white;
-}
-
-.eraser {
-    margin-top: 32px;
+    padding: 8px;
+    margin-top: 24px;
     margin-bottom: 24px;
 }
 
-.clear {
-    margin-bottom: 24px;
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grid-size {
+    width: 140px;
+    padding: 4px;
 }
 
 .quote {
@@ -138,6 +149,19 @@ body {
     justify-content: center; 
     background-color:lightgray;
 }
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.grid-cell {
+    border: 1px solid lightgray;
+}
+
 
 @media (max-width: 1000px) {
     .body {
