@@ -45,56 +45,78 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
-.colors {
+.colors-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .colors-head {
-    margin: 24px;
+    margin: 28px;
     font-weight: bold;
+    font-size: 20px;
 }
 
-.btns {
-    margin: 24px;
-}
-
-.colors-btn {
+.btn {
     padding: none;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.black {
+    background-color: black;
+}
+.orange {
+    background-color: orange;
+}
+.gray {
+    background-color: gray;
+}
+
+.eraser, .clear {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 8px;
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
 }
 
 .eraser {
-    margin: 24px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 8px;
-    width: 80px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+    margin-top: 32px;
+    margin-bottom: 24px;
 }
 
 .clear {
-    margin: 24px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 8px;
-    width: 80px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.quote {
+    padding: 24px;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom :24px;
 }
 
 #pad {
